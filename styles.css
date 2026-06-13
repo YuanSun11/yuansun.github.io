@@ -684,6 +684,49 @@ tr:last-child td {
   grid-template-columns: minmax(260px, 0.5fr) 1fr;
 }
 
+.opportunity-section {
+  align-items: start;
+  border-block: 1px solid var(--line);
+  display: grid;
+  gap: clamp(1.5rem, 5vw, 4rem);
+  grid-template-columns: minmax(220px, 0.45fr) 1fr;
+  padding-bottom: clamp(1.5rem, 3vw, 2.5rem);
+  padding-top: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+.opportunity-heading {
+  border-left: 4px solid var(--gold);
+  padding-left: 1rem;
+}
+
+.opportunity-heading span {
+  color: var(--accent-dark);
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.4rem;
+  text-transform: uppercase;
+}
+
+.opportunity-heading h2 {
+  font-size: clamp(1.35rem, 2.4vw, 2rem);
+  margin-bottom: 0;
+}
+
+.opportunity-copy p {
+  color: var(--muted);
+  margin-bottom: 0.65rem;
+  max-width: 48rem;
+}
+
+.opportunity-copy a {
+  color: var(--accent-dark);
+  display: inline-block;
+  font-weight: 800;
+  margin-top: 0.35rem;
+}
+
 .contact-layout.section {
   padding-top: 1.2rem;
 }
@@ -754,6 +797,7 @@ tr:last-child td {
   .hero,
   .two-column,
   .contact-layout,
+  .opportunity-section,
   .credentials-section {
     grid-template-columns: 1fr;
   }
